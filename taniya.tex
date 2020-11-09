@@ -1,0 +1,256 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\namesection{Taniya}{Gupta}{
+\href{https://thetaniyagupta.github.io/}{thetaniyagupta.github.io} \\
+\href{mailto:sjain65@uic.edu}{thetaniyagupta@gmail.com} | 7889365113
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.31\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+
+\runsubsection{Guru Gobind Singh Indraprastha University}
+\location{Bharati Vidyapeeth's College of Engineering}\\
+\descript{B.Tech in Electronics \& Communication}
+\location{May 2016 - June 2020 | Delhi, India \\ CGPA: 8.22}
+\sectionsep
+
+
+\subsection{Sir Abraham Lincoln  Embark Garrison Senior Secondary School}
+\descript{Senior Secondary Certificate Examination }
+\location{2016 | Jammu, India \\Aggregate 87.4\%}
+\sectionsep
+
+\subsection{Fatima convent High School}
+\descript{Secondary School Examination}
+\location{2014 | Jammu, India \\ Aggregate 86.4\%}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{PROFILE LINKS}
+Github:// \href{https://github.com/thetaniyagupta/}{\custombold{thetaniyagupta}} \\
+LinkedIn://  \href{https://www.linkedin.com/in/thetaniyagupta/}{\custombold{thetaniyagupta}} \\
+LeetCode://  \href{https://leetcode.com/thetaniyagupta/}{\custombold{thetaniyagupta}} \\
+Hackerrank://  \href{https://www.hackerrank.com/thetaniyagupta}{\custombold{thetaniyagupta}}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location {Proficient:}
+C++ \textbullet{} Data Structures  \textbullet{} Algorithms \\ 
+\location {Intermediate:}
+\textbullet{} SQL \textbullet{} HTML \textbullet{}  CSS \textbullet{}  Java \\
+\location{Prior Knowledge:}
+\textbullet{} C \textbullet{} Python \textbullet{} JavaScript \\
+\sectionsep
+\subsection{Tools and Framework}
+Git \textbullet{} Django \textbullet{} Meteor
+\sectionsep
+\subsection{Technologies}
+\location{ Basic :}
+\textbullet{} Convolutional Neural Networks \\
+\textbullet{} Recurrent Neural Networks \\
+\textbullet{} PyTorch \& Style Transfer\\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     CERTIFICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{ CERTIFICATIONS}
+
+ \textbullet{} SQL(Advanced) - HackerRank\\
+ \textbullet{} Java (Intermediate) - HackerRank\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.67\textwidth} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{ Open Projects Lab}
+\descript{| Collaborator}
+\location{ Feb’ 2019 – Apr’ 2019 | New Delhi, India}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item   Worked on initial development of platform which would help students, educators, professionals collaborate together while doing hands-on on some real-life problems.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{HackerEarth}
+\descript{| University Evangelist }
+\location{Oct’ 2018 – March’ 2019 | New Delhi, India}
+\begin{tightemize}
+\item Conducted programming contests, Hackathons on HackerEarth platform.
+\item Worked on testing \& moderating different programming contests \& Hackathons.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{National Thermal Power Corporation}
+\descript{| Summer Intern}
+\location{ Jun’ 2018 – July’ 2018 | New Delhi, India }
+\begin{tightemize}
+\item Learnt about automation of various Units of thermal plant, how the complete process can be controlled and automated using DAS (Digital Acquisition System) and SCADA.
+\item Worked on designing of automated system using Ladder Diagram and C language               
+
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{PROJECTS}
+\subsection{\href{https://github.com/hackerearthclub/hackerearthclub.github.io}{BVP HEC Website}}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space \location{\urlstyle{same}\url{https://github.com/archit09jain/Spam-Filter}}
+\begin{tightemize}
+\item Website designed for programming club of the college.
+\end{tightemize}
+\sectionsep
+\subsection{\href{https://github.com/thetaniyagupta/pytorch-challenge}{Pytorch Challenge}}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item It contains various neural networks implemented using PyTorch. This has been done under Facebook Udacity scholarship challenge course
+\end{tightemize}
+\sectionsep
+\subsection{\href{https://github.com/thetaniyagupta/RECORDS}{Hotel Management and Bookings}} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Records of booking of hotels by costumer maintained using C++. It displays record of rooms booked and available. 
+\end{tightemize}
+\sectionsep
+\subsection{\href{https://github.com/thetaniyagupta/MYCOLLEGE}{My College App}} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Attendance app for college students created during Hacktivate (hackathon organized by BVPIEEE) 
+\end{tightemize}
+\sectionsep
+\subsection{\href{https://github.com/thetaniyagupta/BLOGiee}{Blogiee}}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item A DJANGO based web app created for blogging.
+\end{tightemize}
+\sectionsep
+\subsection{\href{https://github.com/thetaniyagupta/MYTWITTER}{My Twitter}}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item An app like twitter created using meteor framework.
+\end{tightemize}
+\sectionsep
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{ACHIEVEMENTS} 
+\begin{tabular}{rll}
+2019 & Recipient & Facebook Developer Circles Scholarship Training Programme. \\
+     & &  Amongst top 235 final candidates across globe.\\
+2018 & Finalist & DISQvery - Digital Impact Square, Tata Consultancy Services.\\
+     &  & Amongst top 10 percentile candidates across India.\\
+2018 & Recipient & Facebook PyTorch Udacity Scholarship Challenge.\\
+2016 & Recipient & Prime Minister's Scholarship by Ministry of Human Resources \\
+     & &  \& Development, Govt of India.\\
+\end{tabular}
+\begin{tightemize}
+\item Selected for Facebook’s F8 conference at San Jose, California.\\
+\end{tightemize}
+\sectionsep
+
+\end{minipage} 
+\end{document} 
+ \documentclass[]{article}
